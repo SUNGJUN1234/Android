@@ -53,8 +53,5 @@ class ImageActivity : AppCompatActivity() {
             }
             img.setImageResource(imgArray[index])
         }
-
-
-
     }
 }
