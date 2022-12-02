@@ -10,11 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MovieAdapter(val context:Context,val movies:ArrayList<MovieVO>):RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
-
-
     inner class ViewHolder(itemView:View) :RecyclerView.ViewHolder(itemView){
-
-        val clMovie:ConstraintLayout
 
         val tvRank : TextView
         val tvOAN : TextView
@@ -28,12 +24,7 @@ class MovieAdapter(val context:Context,val movies:ArrayList<MovieVO>):RecyclerVi
             tvAudi = itemView.findViewById(R.id.tvAudi)
             tvMovieNm = itemView.findViewById(R.id.tvMovieNm)
             tvOpenDt = itemView.findViewById(R.id.tvOpenDt)
-
-            clMovie = itemView.findViewById(R.id.clMovie)
         }
-
-
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
