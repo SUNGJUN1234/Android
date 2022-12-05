@@ -122,15 +122,6 @@ class BoardActivity : AppCompatActivity() {
 
 
 
-
-
-
-
-
-
-
-
-
     }// onCreate() 경계
 
     val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
