@@ -29,6 +29,12 @@ class LoginActivity : AppCompatActivity() {
         val loginId = sharedPreferences.getString("loginId","")
         val loginPw = sharedPreferences.getString("loginPw","")
 
+        val spf = getSharedPreferences(
+            "loginInfo",
+            Context.MODE_PRIVATE
+        )
+        val loginName = spf.getString("loginId","null")
+
 
         // FirebaseAuth 초기화
         auth = Firebase.auth
@@ -57,6 +63,11 @@ class LoginActivity : AppCompatActivity() {
                         editor.putString("loginPw",pw)
                         editor.commit()
                         //
+
+                        // 채팅용 SharedPreferences (내 아이디만 가지고 있는 가방)
+                        val editorSpf = spf.edit()
+                        editorSpf.putString("loginId",email)
+                        editorSpf.commit()
 
 
                         val intent = Intent(this,MainActivity::class.java)

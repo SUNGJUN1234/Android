@@ -43,7 +43,7 @@ class Fragment1 : Fragment() {
 
 
         // 선생님 firebase로 정보 보내기
-        val yehoUrl = "https://android-project-yeho-default-rtdb.firebaseio.com/"
+        val yehoUrl = "https://iotchat-188fe-default-rtdb.firebaseio.com/"
         val yehoDb = Firebase.database(yehoUrl)
         val jsj = yehoDb.getReference("김정우")
         btnSend.setOnClickListener{

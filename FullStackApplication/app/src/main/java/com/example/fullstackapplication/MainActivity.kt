@@ -86,7 +86,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.tab5 -> {
                     supportFragmentManager.beginTransaction().replace(
                         R.id.fl,
-                        Fragment5()
+//                        Fragment5()
+                    ChatFragment()
                     ).commit()
                 }
             }
