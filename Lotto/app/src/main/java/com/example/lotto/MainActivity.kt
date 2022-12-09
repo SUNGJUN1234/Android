@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         val countDownTimer3 = object : CountDownTimer(3000,50){
             override fun onTick(p0: Long) {
                 var randomNumber = Random.nextInt(45)+1
-                while(randomNumber.toString() == number1.text.toString()&&randomNumber.toString() == number2.text.toString()){
+                while(randomNumber.toString() == number1.text.toString()||randomNumber.toString() == number2.text.toString()){
                     randomNumber = Random.nextInt(45)+1
                 }
 
@@ -66,8 +66,8 @@ class MainActivity : AppCompatActivity() {
         val countDownTimer4 = object : CountDownTimer(4000,50){
             override fun onTick(p0: Long) {
                 var randomNumber = Random.nextInt(45)+1
-                while(randomNumber.toString() == number1.text.toString()&&randomNumber.toString() == number2.text.toString()
-                    &&randomNumber.toString() == number3.text.toString()){
+                while(randomNumber.toString() == number1.text.toString()||randomNumber.toString() == number2.text.toString()
+                    ||randomNumber.toString() == number3.text.toString()){
                     randomNumber = Random.nextInt(45)+1
                 }
                 number4.text = randomNumber.toString()
@@ -80,8 +80,8 @@ class MainActivity : AppCompatActivity() {
         val countDownTimer5 = object : CountDownTimer(5000,50){
             override fun onTick(p0: Long) {
                 var randomNumber = Random.nextInt(45)+1
-                while(randomNumber.toString() == number1.text.toString()&&randomNumber.toString() == number2.text.toString()
-                    &&randomNumber.toString() == number3.text.toString()&&randomNumber.toString() == number4.text.toString()){
+                while(randomNumber.toString() == number1.text.toString()||randomNumber.toString() == number2.text.toString()
+                    ||randomNumber.toString() == number3.text.toString()||randomNumber.toString() == number4.text.toString()){
                     randomNumber = Random.nextInt(45)+1
                 }
                 number5.text = randomNumber.toString()
@@ -93,9 +93,9 @@ class MainActivity : AppCompatActivity() {
         val countDownTimer6 = object : CountDownTimer(6000,50){
             override fun onTick(p0: Long) {
                 var randomNumber = Random.nextInt(45)+1
-                while(randomNumber.toString() == number1.text.toString()&&randomNumber.toString() == number2.text.toString()
-                    &&randomNumber.toString() == number3.text.toString()&&randomNumber.toString() == number4.text.toString()
-                    &&randomNumber.toString() == number5.text.toString()){
+                while(randomNumber.toString() == number1.text.toString()||randomNumber.toString() == number2.text.toString()
+                    ||randomNumber.toString() == number3.text.toString()||randomNumber.toString() == number4.text.toString()
+                    ||randomNumber.toString() == number5.text.toString()){
                     randomNumber = Random.nextInt(45)+1
                 }
                 number6.text = randomNumber.toString()

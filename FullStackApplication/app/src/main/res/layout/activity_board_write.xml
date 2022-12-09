@@ -35,11 +35,12 @@
         app:layout_constraintTop_toBottomOf="@+id/etTitle" />
 
     <ImageView
-        android:id="@+id/imgPlus"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="120dp"
+        android:id="@+id/imgLoad"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="@+id/etContent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/etContent"
         app:layout_constraintTop_toBottomOf="@+id/etContent"
         app:srcCompat="@drawable/plusbtn" />
@@ -60,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="이미지 추가"
-        app:layout_constraintEnd_toEndOf="@+id/imgPlus"
-        app:layout_constraintStart_toStartOf="@+id/imgPlus"
-        app:layout_constraintTop_toBottomOf="@+id/imgPlus" />
+        app:layout_constraintEnd_toEndOf="@+id/imgLoad"
+        app:layout_constraintStart_toStartOf="@+id/imgLoad"
+        app:layout_constraintTop_toBottomOf="@+id/imgLoad" />
 </androidx.constraintlayout.widget.ConstraintLayout>

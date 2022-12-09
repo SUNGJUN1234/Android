@@ -47,7 +47,8 @@ class Fragment4 : Fragment() {
         // 1. 전체 컨텐츠 데이터들을 다 가져오자
         getContentData()
         // 2. 사용자가 북마크한 정보를 다 가져오자
-        getBookmarkData()
+        getBookmarkData()       // bookKist를 다 가직온 뒤쪽에 getContent 가 실행되고 있음
+        // getContentData 가 하고있는 일은 전체 데이터를 가져오는게 아니라 bookmarkList에 있는 것만 가져오는 역할
         // 3. 전체 컨텐츠 중에서 사용자가 북마크한 정보만 recyclerView에 반영
         adapter = BookmarkAdapter(requireActivity(), data , keyData, bookmarkList)
         // 4. adapter 적용
@@ -58,6 +59,8 @@ class Fragment4 : Fragment() {
         return view
 
     }
+    
+
     // bookmarkList에 있는 데이터들을 다 가져와주자
     fun getContentData(){
         // content 경로에 있는 데이터를 다 가지고 오자
